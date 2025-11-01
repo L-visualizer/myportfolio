@@ -1,0 +1,29 @@
+.milestones-section {
+  padding: 5rem 2rem;
+  background: #0f0a3f;
+  color: #fff;
+  text-align: center;
+}
+
+.milestones-section h2 {
+  font-size: 2rem;
+  color: #e0c3ff;
+  margin-bottom: 2rem;
+}
+
+.milestones-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.milestones-list li {
+  font-size: 1.125rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #7f00ff;
+}
+
+.milestones-list li strong {
+  color: #b57fff;
+}

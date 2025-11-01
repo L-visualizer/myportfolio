@@ -1,0 +1,17 @@
+.social-section {
+  padding: 5rem 2rem;
+  background: #0f0a3f;
+  color: #fff;
+  text-align: center;
+}
+
+.social-section h2 {
+  font-size: 2rem;
+  color: #e0c3ff;
+  margin-bottom: 2rem;
+}
+
+.facebook-embed iframe {
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #7f00ff;
+}
