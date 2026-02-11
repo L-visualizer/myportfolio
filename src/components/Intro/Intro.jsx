@@ -15,8 +15,8 @@ export default function Intro() {
         </div>
         <div className="intro-image">
           <img
-            src="https://via.placeholder.com/400x400"
-            alt="Hero"
+            src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt="Marketing Professional"
           />
         </div>
       </div>

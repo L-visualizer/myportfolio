@@ -32,15 +32,39 @@
   gap: 2rem;
 }
 
-.navbar-links a {
+.navbar-links a,
+.navbar-links > * {
   font-family: Arial, sans-serif;
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
+  cursor: pointer;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links > *:hover {
   color: #fff8dc;
   text-shadow: 0 0 10px #e0b3ff, 0 0 20px #9d00ff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links {
+    display: none;
+  }
 }

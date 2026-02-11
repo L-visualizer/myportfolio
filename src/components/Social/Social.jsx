@@ -2,21 +2,30 @@ import React from "react";
 import "./Social.css";
 
 export default function Social() {
+  const socialLinks = [
+    { name: "LinkedIn", url: "#", icon: "💼" },
+    { name: "Facebook", url: "#", icon: "📘" },
+    { name: "Instagram", url: "#", icon: "📸" },
+    { name: "Twitter", url: "#", icon: "🐦" },
+    { name: "YouTube", url: "#", icon: "🎥" },
+  ];
+
   return (
     <section id="social" className="social-section">
-      <h2>Follow Me on Facebook</h2>
-      <div className="facebook-embed">
-        <iframe
-          title="Facebook Page"
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyourpagehere&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          width="500"
-          height="700"
-          style={{ border: "none", overflow: "hidden" }}
-          scrolling="no"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          allowFullScreen={true}
-        ></iframe>
+      <h2>Connect on Social Media</h2>
+      <div className="social-links">
+        {socialLinks.map((social) => (
+          <a
+            key={social.name}
+            href={social.url}
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="social-icon">{social.icon}</span>
+            <span className="social-name">{social.name}</span>
+          </a>
+        ))}
       </div>
     </section>
   );

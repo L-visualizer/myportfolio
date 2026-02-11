@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section id="aboutme" className="aboutme-section">
       <div className="aboutme-container">
         <img
-          src="https://via.placeholder.com/300"
+          src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=300"
           alt="Profile"
           className="aboutme-image"
         />

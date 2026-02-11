@@ -6,7 +6,6 @@ import Milestones from './components/Milestones/Milestones'
 import MyVideos from './components/MyVideos/MyVideos'
 import Social from './components/Social/Social'
 import Connect from './components/Connect/Connect'
-import "./index.css"
 
 function App() { 
   return (

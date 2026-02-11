@@ -3,8 +3,9 @@ import "./MyVideos.css";
 
 export default function MyVideos() {
   const videos = [
-    { id: "abcd1234", title: "Marketing Campaign Tips" },
-    { id: "xyz9876", title: "Quick Branding Hacks (Shorts)" },
+    { id: "dQw4w9WgXcQ", title: "Marketing Campaign Tips" },
+    { id: "jNQXAC9IVRw", title: "Brand Building Strategies" },
+    { id: "9bZkp7q19f0", title: "Social Media Success" },
   ];
 
   return (
