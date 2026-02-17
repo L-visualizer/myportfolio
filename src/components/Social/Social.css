@@ -1,14 +1,50 @@
 .social-section {
   padding: 5rem 2rem;
-  background: #0f0a3f;
+  background: linear-gradient(135deg, #1f1535 0%, #0f0a3f 50%, #2a1545 100%);
   color: #fff;
   text-align: center;
+  position: relative;
+}
+
+.social-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(4px 4px at 20px 30px, #b57fff, transparent),
+    radial-gradient(2px 2px at 60px 70px, #9d00ff, transparent),
+    radial-gradient(1px 1px at 50px 50px, #e0c3ff, transparent),
+    radial-gradient(3px 3px at 130px 80px, #7f00ff, transparent);
+  background-size: 150px 150px;
+  animation: pixelFloat 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.social-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(2px 2px at 40px 40px, #e0b3ff, transparent),
+    radial-gradient(3px 3px at 100px 20px, #b57fff, transparent),
+    radial-gradient(1px 1px at 20px 100px, #7f00ff, transparent);
+  background-size: 160px 160px;
+  animation: pixelFade 6s ease-in-out infinite reverse;
+  pointer-events: none;
 }
 
 .social-section h2 {
   font-size: 2rem;
   color: #e0c3ff;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .social-links {
@@ -18,6 +54,8 @@
   gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .social-link {

@@ -24,6 +24,7 @@
   border-radius: 1.5rem;
   box-shadow: 0 0 30px #7f00ff;
   background: #2a0f5f;
+  z-index: 1;
 }
 
 .video-tab {
@@ -113,6 +114,8 @@
   gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .tab-indicator {
